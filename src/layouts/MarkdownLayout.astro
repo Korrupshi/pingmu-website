@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+// import '../styles/global.css';   
+const { frontmatter } = Astro.props;
+---
+
+<Layout title = {frontmatter.title}>
+    <main>
+        <div class="container">
+            <slot />
+        </div>
+    </main>
+</Layout>
+<style>
+    .container {
+        padding: 50px;
+        padding-bottom: 100px;
+    }
+</style>
+
+
