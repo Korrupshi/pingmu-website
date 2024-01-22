@@ -17,17 +17,37 @@
         white 60%
     );
 }
-/* * {
+* {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0;
-  } */
+    /* margin: 0px; */
+    /* padding: 0; */
+  }
 html {
     font-family: "Outfit", Tahoma, Geneva, Verdana, sans-serif;
     /* font-family: system-ui, sans-serif; */
     background: var(--backgroundColor);
     color: var(--textPrimary);
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+
 }
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+}
+button{
+    font-family: "Outfit", sans-serif;
+    color: var(--bgDarkerColor);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--primaryColor);
+}
+
 h1,
 h2,
 h3,
@@ -41,9 +61,12 @@ color: var(--textPrimary);
 }
 
 a {
-text-decoration: none;
-color: va(--textSecondary);
-}
+	text-decoration: none;
+	color: var(--primaryColor);
+	}
+	strong{
+		color: var(--textPrimary);
+	}
 p,
 li,
 span,

@@ -2,7 +2,9 @@
 interface Props {
 	title: string;
 }
-
+import '../styles/global.css';   
+import NavBar from '../components/NavBar.astro'
+import Footer from '../components/Footer.astro'
 
 const { title } = Astro.props;
 ---
@@ -19,72 +21,17 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+	<NavBar/>
+
 		<slot />
+	<Footer/>
+
 	</body>
 </html>
-<style is:global>
-	:root {
-		--primaryColor: #14cb42;
-		--primaryVariantColor: #f3ea78;
-		--backgroundColor: #1e2736;
-		--bgDarkerColor: #0f141a;
-		--surfaceColor: #33404f;
-		--textPrimary: #efeff1;
-		--textSecondary: #c8c8c8;
-		--textTertiary: #98979d;
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: "Outfit", Tahoma, Geneva, Verdana, sans-serif;
-		background: var(--backgroundColor);
-		color: var(--textPrimary);
-		overflow-x: hidden;
-	}
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-	font-family: "Outfit", sans-serif;
-	/* font-family: 'Montserrat', sans-serif; */
-	/* font-family: 'Oswald', sans-serif; */
-	color: var(--textPrimary);
+<!-- Below needed for navbar padding -->
+<!-- <style>
+	body{
+		padding-top: 88px;
 	}
-
-	a {
-	text-decoration: none;
-	color: var(--primaryColor);
-	}
-	strong{
-		color: var(--textPrimary);
-	}
-	p,
-	li,
-	span,
-	label,
-	input,
-	textarea {
-	color: var(--textSecondary);
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
+</style> -->

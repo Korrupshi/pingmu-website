@@ -1,84 +1,98 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Home from '../layouts/Home.astro';
+import NavBar from '../components/NavBar.astro'
+import Footer from '../components/Footer.astro'
 ---
 
-<Home title="Pingmu - Learn Chinese">
-	<nav>
-		<a class="pingmu-banner" href="/"><img class="pingmu-banner" src = "/pingmu-banner.svg" alt="Pingmu"/></a>
-		<!-- <a href="/privacy" class="nav_item">Privacy</a> -->
-		<!-- <a href="/terms" class="nav_item">Terms</a> -->
-	</nav>
+<Layout title="Pingmu - Learn Chinese">
+	<!-- <NavBar/> -->
 	<main>
-		<!-- <img src="/pingmu-banner.svg" alt="SVG Image" width="200" height="200"> -->
-		<h1>Welcome to <span class="text-gradient">Pingmu</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+		<div class="container">
+			<div class="column text-column">
+				<h1>Videos embedded within a language learning environment</h2>
+				<p>Learn Chinese through videos, using powerful features aimed to make the language learning process more effective and straightforward.</p>
+				<a href="https://play.google.com/store/apps/details?id=com.pingmu.pingmu_player" target="_blank">
+					<img src="/google-playstore-button.svg" alt="google-play">
+				</a>
+			  </div>
+		  
+			  <div class="column image-column">
+				<!-- Replace "your-image.jpg" with the actual path or URL of your image -->
+				<img src="/phone-merged.svg" alt="Image Description">
+			  </div>
+			</div>
 	</main>
+	<!-- <Footer/> -->
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
+	body{
+		/* align-items: center; */
+		/* max-width: calc(100% - 2rem); */
+        background-image: url('/bg-blobs.svg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+
+	.container {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	width: 100%;
+	padding-left: 60px; 
+	 padding-right: 60px;
+	justify-content: center; /* Center the content horizontally */
+	align-items: center; /* Center the content vertically */
+	overflow-y: hidden;
+
+	}
+		
+		.column {
+	flex: 1;
+	padding: 20px;
 	}
 
-	nav {
-  color: var(--textPrimary);
-  padding: 16px;
-  text-align: center;
-}
+		.image-column {
+	height: 100%;
+	}
 
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 14px 16px;
-  display: inline-block;
-}
+	.image-column img {
+	max-width: 100%; /* Ensure the image doesn't exceed the column width */
+	height: 600px; /* Maintain the image's aspect ratio */
+	display: block; /* Remove any extra spacing below the image */
+	}
 
-nav img {
-  height: 40px; /* Adjust the height of the logo as needed */
-  vertical-align: middle;
-}
+	
 
-.nav_item {
-  color: var(--textPrimary);
-  font-size: 24px;
-}
-.pingmu-banner {
-  height: max-content;
-  float: left;
-}
+	/* Flex container styles */
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+      justify-content: space-between; /* Adjust as needed */
+      align-items: center; /* Align items vertically */
+    }
+
+    /* Individual item styles */
+    .flex-item {
+      flex: 0 0 calc(50% - 10px); /* Two items in a row with some spacing */
+      margin-bottom: 20px; /* Adjust as needed for spacing */
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 600px) {
+      .flex-item {
+        flex: 0 0 100%; /* Make items take full width on smaller screens */
+      }
+    }
+
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
 
 	.astro-a {
 		position: absolute;
@@ -90,11 +104,17 @@ nav img {
 		z-index: -1;
 	}
 	h1 {
-		font-size: 4rem;
+		font-size: 2.5rem;
+		/* font-size: 3rem; */
 		font-weight: 700;
 		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
+		/* text-align: center; */
+		margin-bottom: 20px;
+	}
+	p{
+		font-size: 1.2rem;
+		margin-bottom: 40px;
+
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
@@ -121,10 +141,5 @@ nav img {
 	.instructions strong {
 		color: rgb(var(--accent-light));
 	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
+
 </style>

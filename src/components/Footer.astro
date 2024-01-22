@@ -1,0 +1,29 @@
+---
+import "../styles/global.css"
+
+const currentYear = new Date().getFullYear()
+---
+
+<div class="container">
+    <div class="text-block">
+        © Pingmu {currentYear}. All rights reserved. | 
+        <a href="/terms">Terms &amp;&nbsp;Conditions</a> | 
+        <a href="/privacy">Privacy Policy</a> | 
+        <a href="/delete">Delete Account Data</a>
+    </div>
+</div>
+
+<style>
+    .container {
+      background-color: var(--surfaceColor);
+      height: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text-block {
+      text-align: center;
+    }
+</style>
