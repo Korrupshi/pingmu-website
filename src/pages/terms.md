@@ -6,7 +6,7 @@ description: Pingmu Languages Terms & Conditions
 ---
 
 # Terms & Conditions
-Last updated: 22 January 2024
+Last updated: 23 January 2024
 
 <br>
 
@@ -45,13 +45,18 @@ We prioritize your privacy. Any personal information you provide while using our
 <br>
 
 ### 4. Service Plans
-The basic version of our App can be used free of charge. The free version gives access to all features in our App, but some features have a limited rate. For unlimited access to all features we provide several “Premium” options. You can choose a one-time (prepaid) purchase that provides Premium access for 1 month. Additionally, we provide Premium subscriptions for monthly or yearly subscriptions. Our fees for Premium are available to view in our app. We reserve the right to update our fees from time to time. We reserve the right to change or withdraw features, specifications, services and content of a Service Plan at any time, without notice to you. 
+The basic version of our App can be used free of charge. The free version gives access to all features in our App, but some features have a limited rate. For unlimited access to all features we provide several “Premium” options. You can choose between Premium plans for monthly or yearly subscriptions. Our fees for Premium are available to view in our app. We reserve the right to update our fees from time to time. We reserve the right to change or withdraw features, specifications, services and content of a Service Plan at any time, without notice to you. 
 
 <br>
 
-#### 4.1 Paid Subscriptions
+#### 4.1 Premium Paid Subscriptions
+If you choose Monthly Premium, your subscription will automatically renew on a monthly basis, approximately one month from the activation date. If you choose Yearly Premium, the subscription will automatically renew annually on the activation date. The payment method used for the current Premium subscription will be charged at the end of each subscription period for renewals. You acknowledge that, if we change the fees, this will not affect your existing Premium subscription, therefore, if you have signed up for subscription at a certain fee, any fee changes will not affect any current subscription or any renewals. Next to any subscriptions plans, we may offer lifetime Premium. This is a one-time payment that gives you access to all the Premium features.
 
-If you choose Monthly Premium, your subscription will automatically renew on a monthly basis, approximately one month from the activation date. If you choose Yearly Premium, the subscription will automatically renew annually on the activation date. The payment method used for the current Premium subscription will be charged at the end of each subscription period for renewals. You acknowledge that, if we change the fees, this will not affect your existing Premium subscription, therefore, if you have signed up for subscription at a certain fee, any fee changes will not affect any current subscription or any renewals.
+<br>
+
+#### 4.2 In-app purchases
+Next to Premium plans, we also offer in-app purchases of consumables, such as flash cards or exports. These are one time payments that in return provide you with the amount of that consumable that you purchased. Our fees for these consumables are available to view in our app. We reserve the right to update our fees from time to time. We reserve the right to change or withdraw consumables, specifications, services and content at any time, without notice to you. 
+
 
 <br>
 
