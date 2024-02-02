@@ -1,7 +1,8 @@
 :root {
     --primaryColor: #14cb42;
     --primaryVariantColor: #f3ea78;
-    --backgroundColor: #1e2736;
+    --backgroundColor: #0f141a;
+    /* --backgroundColor: #1e2736; */
     --bgDarkerColor: #0f141a;
     --surfaceColor: #33404f;
     --textPrimary: #efeff1;
@@ -22,8 +23,13 @@
     /* margin: 0px; */
     /* padding: 0; */
   }
+
 html {
-    font-family: "Outfit", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 400; */
+  /* font-style: normal; */
+    /* font-family: "Outfit", Tahoma, Geneva, Verdana, sans-serif; */
     /* font-family: system-ui, sans-serif; */
     background: var(--backgroundColor);
     color: var(--textPrimary);

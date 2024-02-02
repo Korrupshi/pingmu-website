@@ -1,15 +1,24 @@
 ---
-import "../styles/global.css"
+// import "../styles/global.css"
 
 const currentYear = new Date().getFullYear()
 ---
 
-<div class="container">
+<div class="grid grid-rows-2 gap-2 text-center p-3 bg-black">
+  <div class="flex flex-row justify-center">
+    <a class="px-2" href="/terms">Terms &amp;&nbsp;Conditions</a>
+    <p class="px-2"> | </p> 
+        <a class="px-2" href="/privacy">Privacy Policy</a>
+  </div>
+  <p>© {currentYear} Pingmu. All rights reserved</p>
+
+</div>
+
+<!-- <div class="container">
     <div class="text-block">
-        © Pingmu {currentYear}. All rights reserved. | 
+        © {currentYear} Pingmu. All rights reserved | 
         <a href="/terms">Terms &amp;&nbsp;Conditions</a> | 
-        <a href="/privacy">Privacy Policy</a> | 
-        <a href="/delete">Delete Account Data</a>
+        <a href="/privacy">Privacy Policy</a>
     </div>
 </div>
 
@@ -17,7 +26,7 @@ const currentYear = new Date().getFullYear()
     .container {
       background-color: var(--surfaceColor);
       height: 100px;
-      width: 100%;
+      width: 100vw;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -26,4 +35,4 @@ const currentYear = new Date().getFullYear()
     .text-block {
       text-align: center;
     }
-</style>
+</style> -->
