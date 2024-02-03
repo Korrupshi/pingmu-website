@@ -5,8 +5,8 @@ export default {
 		extend: {
 			backgroundImage: {
 				'gradient-green': 'linear-gradient(150deg, rgba(0,0,0,0) 60%, rgba(21,106,42,1) 100%)',
-				'stars-sm': "url('../public/stars-mobile.png')",
-				'stars-lg': "url('../public/stars-large.png')"
+				'stars-sm': "url('/images/stars-mobile.png')",
+				'stars-lg': "url('/images/stars-large.png')"
 			  },
 			colors: {
 				// primary: '#14cb42', // #06AA06
