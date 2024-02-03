@@ -1,20 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
 const { frontmatter } = Astro.props;
 ---
 
 <Layout title = {frontmatter.title}>
-    <main>
-        <div class="container">
+    <section class="px-8 py-4 ">
             <slot />
-        </div>
-    </main>
+    </section>
 </Layout>
-<style>
-    .container {
-        padding: 50px;
-        padding-bottom: 100px;
-    }
-</style>
-
 

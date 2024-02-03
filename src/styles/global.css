@@ -1,7 +1,8 @@
 :root {
     --primaryColor: #14cb42;
     --primaryVariantColor: #f3ea78;
-    --backgroundColor: #1e2736;
+    --backgroundColor: #0f141a;
+    /* --backgroundColor: #1e2736; */
     --bgDarkerColor: #0f141a;
     --surfaceColor: #33404f;
     --textPrimary: #efeff1;
@@ -22,12 +23,17 @@
     /* margin: 0px; */
     /* padding: 0; */
   }
+
 html {
-    font-family: "Outfit", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 400; */
+  /* font-style: normal; */
+    /* font-family: "Outfit", Tahoma, Geneva, Verdana, sans-serif; */
     /* font-family: system-ui, sans-serif; */
     background: var(--backgroundColor);
     color: var(--textPrimary);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     box-sizing: border-box;
     margin: 0px;
     padding: 0;
@@ -47,16 +53,23 @@ button{
     font-size: 16px;
     background-color: var(--primaryColor);
 }
+h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+h3{
+    font-size: 1.3rem;
+    font-weight: 500;
 
-h1,
+}
+
+/* h1, */
 h2,
 h3,
 h4,
 h5,
 h6 {
 font-family: "Outfit", sans-serif;
-/* font-family: 'Montserrat', sans-serif; */
-/* font-family: 'Oswald', sans-serif; */
 color: var(--textPrimary);
 }
 

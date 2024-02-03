@@ -1,0 +1,160 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NavBar from '../components/NavBar.astro'
+import Footer from '../components/Footer.astro'
+---
+
+<Layout title="Pingmu - Learn Chinese">
+	<main >
+		
+		<div class="h-screen flex flex-col justify-center p-5 text-center bg-background">
+			<h1 class="text-4xl text-textPrimary font-semibold pb-6">Videos embedded within a language learning environment</h1>
+			<p class="text-base text-textPrimary font-light">
+				Fun. Effective. Easy
+			</p>
+			<!-- <p class="text-base text-textPrimary font-light">
+				Learn Chinese through videos, using powerful features aimed to make the language learning process more effective and straightforward.
+			</p> -->
+			<br>
+			<br>
+			
+			<a class="flex justify-center" href='https://play.google.com/store/apps/details?id=com.pingmu.pingmu_player&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'  target="_blank">
+				<img class="h-20" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
+			</a>
+		</div>
+		<div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true">
+			<img src="./stars.svg" alt="" sizes="100vw" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center bottom;object-fit:cover;image-rendering:auto" loading="lazy">
+		</div>
+	</main>
+	<!-- <main>
+		<div class="container">
+			<div class="column text-column">
+				<h1>Videos embedded within a language learning environment</h2>
+				<p>Learn Chinese through videos, using powerful features aimed to make the language learning process more effective and straightforward.</p>
+				<a href="https://play.google.com/store/apps/details?id=com.pingmu.pingmu_player" target="_blank">
+					<img src="/google-playstore-button.svg" alt="google-play">
+				</a>
+			  </div>
+		  
+			  <div class="column image-column">
+				<img src="/landing-page-image.svg" alt="Image Description">
+			  </div>
+			</div>
+	</main> -->
+</Layout>
+
+<!-- 
+<style>
+	body{
+        background-image: url('/bg-blobs.svg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+
+	/* h1 {
+		font-size: 2.5rem;
+		font-weight: 700;
+		line-height: 1;
+		margin-bottom: 20px;
+	}
+	p{
+		font-size: 1.2rem;
+		margin-bottom: 40px;
+	} */
+
+	.container {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	width: 100%;
+	padding-left: 60px; 
+	 padding-right: 60px;
+	justify-content: center; /* Center the content horizontally */
+	align-items: center; /* Center the content vertically */
+	overflow-y: hidden;
+
+	}
+		
+		.column {
+	flex: 1;
+	padding: 20px;
+	}
+
+		.image-column {
+	height: 100%;
+	}
+
+	.image-column img {
+	max-width: 100%; /* Ensure the image doesn't exceed the column width */
+	height: 600px; /* Maintain the image's aspect ratio */
+	display: block; /* Remove any extra spacing below the image */
+	}
+
+	
+	/* Flex container styles */
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+      justify-content: space-between; /* Adjust as needed */
+      align-items: center; /* Align items vertically */
+    }
+
+    /* Individual item styles */
+    .flex-item {
+      flex: 0 0 calc(50% - 10px); /* Two items in a row with some spacing */
+      margin-bottom: 20px; /* Adjust as needed for spacing */
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 600px) {
+      .flex-item {
+        flex: 0 0 100%; /* Make items take full width on smaller screens */
+      }
+    }
+
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+
+</style> -->
