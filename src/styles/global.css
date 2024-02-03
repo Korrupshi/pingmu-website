@@ -32,6 +32,7 @@ html {
     /* font-family: "Outfit", Tahoma, Geneva, Verdana, sans-serif; */
     /* font-family: system-ui, sans-serif; */
     background: var(--backgroundColor);
+    /* background: black; */
     color: var(--textPrimary);
     /* overflow-x: hidden; */
     box-sizing: border-box;

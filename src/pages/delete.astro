@@ -1,74 +1,19 @@
 ---
-import NavBar from '../components/NavBar.astro';
 import Layout from '../layouts/Layout.astro';
 
 ---
-
-<Layout title="Delete account data">
-	<main>
-        <div class="delete-container">
-            <div id="delete-content">
-              <h1>Request Data Deletion</h1>
-              <p>Here you can make a request to delete your account data from the "Pingmu - Learn Chinese" app. 
-                Please send us an email requesting to delete your account data. 
-                We aim to fulfill your request within a month.</p>
-              <form
-                id="deleteForm"
-                action="mailto:pingmu.languages@gmail.com?subject=Pingmu%20Support%20-%20Delete%20data%20request&body=I%20hereby%20request%20the%20deletion%20of%20all%20my%20user%20data%20associated%20with%20my%20Pingmu%20account.%20Please%20confirm%20the%20completion%20of%20this%20request%20at%20your%20earliest%20convenience.%20Thank%20you."
-                method="post"
-                >
-                <button  type="submit">Send Email</button>
-              </form>
-            </div>
-          </div>
+<Layout title="Delete data">
+	<main class="flex flex-col h-screen items-center py-8 ">
+    <div class="px-4 sm:px-8 max-w-4xl ">
+      <h1 >Request Data Deletion</h1>
+      <p  class="pb-6">Here you can make a request to delete your account data from the "Pingmu - Learn Chinese" app. 
+        Please send us an email requesting to delete your account data. 
+        We aim to fulfill your request within a month.
+      </p>
+      <form id="deleteForm" action="mailto:pingmu.languages@gmail.com?subject=Pingmu%20Support%20-%20Delete%20data%20request&body=I%20hereby%20request%20the%20deletion%20of%20all%20my%20user%20data%20associated%20with%20my%20Pingmu%20account.%20Please%20confirm%20the%20completion%20of%20this%20request%20at%20your%20earliest%20convenience.%20Thank%20you." method="post">
+        <button class="w-fit text-background bg-primary hover:bg-primaryHover focus:outline-none focus:shadow-outline" type="submit">
+          Send Email
+        </button>
+      </form>
     </main>
 </Layout>
-<style>
-
-    button{
-        padding-left: 8px;
-        padding-right: 8px;
-        border: none;
-        border-radius: 5px;
-        background-color: var(--primaryColor);
-    }
-    .delete-container {
-  width: 100%;
-  padding: 20px;
-  height: 100vh;
-  padding-bottom: 100px;
-  background-color: var(--backgroundColor);
-}
-
-#delete-content {
-  width: 80%;
-  background-color: var(--backgroundColor);
-  margin: 0 auto;
-  a {
-    text-decoration: none;
-    color: #14cb42;
-  }
-  ul,
-  ol {
-    padding-left: 30px;
-  }
-}
-
-textarea {
-  font-family: "Outfit", Tahoma, Geneva, Verdana, sans-serif;
-  width: 80%;
-  min-width: 300px;
-  background-color: var(--surfaceColor);
-  border: none;
-  padding: 8px;
-  font-size: 14px;
-  margin-bottom: 8px;
-  resize: none;
-
-}
-
-#deleteForm {
-  width: 100%;
-}
-
-</style>
