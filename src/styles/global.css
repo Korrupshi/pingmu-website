@@ -33,7 +33,7 @@ html {
     /* font-family: system-ui, sans-serif; */
     background: var(--backgroundColor);
     color: var(--textPrimary);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     box-sizing: border-box;
     margin: 0px;
     padding: 0;
@@ -53,16 +53,23 @@ button{
     font-size: 16px;
     background-color: var(--primaryColor);
 }
+h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+h3{
+    font-size: 1.3rem;
+    font-weight: 500;
 
-h1,
+}
+
+/* h1, */
 h2,
 h3,
 h4,
 h5,
 h6 {
 font-family: "Outfit", sans-serif;
-/* font-family: 'Montserrat', sans-serif; */
-/* font-family: 'Oswald', sans-serif; */
 color: var(--textPrimary);
 }
 

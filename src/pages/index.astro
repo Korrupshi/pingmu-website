@@ -1,63 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro'
 
 ---
 
 <Layout title="Pingmu - Learn Chinese">
-	<!-- <NavBar/> -->
 	<section class="relative h-screen px-3 bg-background bg-[url('./stars-mobile.png')] md:bg-[url('./stars-large.png')] ">
 		<div class="absolute inset-0">
 			<div class="absolute inset-0 bg-gradient-green"></div>
 		</div>
-		
-		<!-- Overlay Elements -->
-		<div class="relative z-10 h-full grid md:grid-cols-2 md:text-left content-center gap-y-12 md: items-center justify-center text-center sm:items-center ">
-			<!-- <NavBar/> -->
-
-			<div class="flex w-full justify-center ">
-				<img
-				src="./pingmu-logo.svg" alt="" class="h-40"
-				/>
-			</div>
-			<div class="" >
-				<h1 class="text-4xl text-textPrimary font-semibold mb-2">Turn Chinese videos into learning <span class="text-primary">opportunities</span>
-					
-				</h1>
-				<p class="text-base text-textSecondary font-light">
-					Enjoy your language learning journey with Pingmu's immersive videos and powerful learning tools
-				</p>
-				<br>
-				<br>
-				
-				<a class="flex justify-center" href='https://play.google.com/store/apps/details?id=com.pingmu.pingmu_player&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'  target="_blank">
-					<img class="h-20" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
-				</a>
-			</div>
-		</div>
+		<Hero/>
 	</section>
-
-	
 </Layout>
-<!-- <section class="relative h-screen p-5 justify-center text-center sm:items-center bg-background bg-[url('./bg-mobile.png')] md:bg-[url('./stars-large.png')] grid gap-2 md:grid-cols-2 md:text-left md: items-center">
-	
-	<div class="flex w-full justify-center">
-		<img
-		src="./pingmu-logo.svg" alt="" class="h-40 w-40 mt-20"
-		/>
-	</div>
-	<div>
-		<h1 class="text-4xl text-textPrimary font-semibold mb-2">Turn Chinese videos into learning <span class="text-primary">opportunities</span>
-			
-		</h1>
-		<p class="text-base text-textSecondary font-light">
-			Enjoy your language learning journey with Pingmu's immersive videos and powerful learning tools
-		</p>
-		<br>
-		<br>
-		
-		<a class="flex justify-center" href='https://play.google.com/store/apps/details?id=com.pingmu.pingmu_player&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'  target="_blank">
-			<img class="h-20" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
-		</a>
-	</div>
-	
-</section> --> 

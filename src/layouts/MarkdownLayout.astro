@@ -1,11 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import NavBar from '../components/NavBar.astro';
+
 const { frontmatter } = Astro.props;
 ---
 
 <Layout title = {frontmatter.title}>
-    <section class="px-8 py-20">
+    <section class="px-8 py-4 ">
             <slot />
     </section>
 </Layout>
