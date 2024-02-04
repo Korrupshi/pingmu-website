@@ -1,10 +1,11 @@
 ---
-interface Props {
-	title: string;
-}
 import '../styles/global.css';   
 import Nav from '../components/NavFixed.astro'
 import Footer from '../components/Footer.astro'
+
+interface Props {
+	title: string;
+}
 
 const { title } = Astro.props;
 ---

@@ -9,16 +9,10 @@ export default {
 				'stars-lg': "url('/images/stars-large.png')"
 			  },
 			colors: {
-				// primary: '#14cb42', // #06AA06
-				// secondary : '#f3ea78',
-				// background: '#FFFFFF',
-				// // background: '#F1F7FC',
-				// // background: '#efeff1',
-				// textPrimary: '#0F141A',
-				// textSecondary: '#1E2736',
-				// textTertiary: '#1E2736',
-				primary: '#14cb42',
-				primaryHover: '#3fec6b',
+				'primary': {
+					DEFAULT: '#14cb42',
+					hover:'#3fec6b'
+				},
 				gradient: '#156A2A',
 				secondary : '#f3ea78',
 				background: '#0f141a',
