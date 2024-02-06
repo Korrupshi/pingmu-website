@@ -1,4 +1,7 @@
 ---
+import { heroDescription } from "../constants";
+import { heroSpanText } from "../constants";
+import { heroTitle } from "../constants";
 import HeroLarge from "./HeroLarge.astro";
 ---
 
@@ -10,11 +13,11 @@ import HeroLarge from "./HeroLarge.astro";
     </div>
     
     <div class="" >
-        <h1 class="text-4xl text-textPrimary font-semibold mb-2">Turn Chinese videos into learning <span class="text-primary">opportunities</span>
+        <h1 class="text-4xl text-textPrimary font-semibold mb-2">{heroTitle}<span class="text-primary">{heroSpanText}</span>
             
         </h1>
         <p class="text-base text-textSecondary font-light">
-            Enjoy your language learning journey with Pingmu's immersive videos and powerful learning tools
+            {heroDescription}
         </p>
         <br>
 

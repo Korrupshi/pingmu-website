@@ -1,10 +1,16 @@
+---
+import { heroDescription } from "../constants";
+import { heroSpanText } from "../constants";
+import { heroTitle } from "../constants";
+---
+
 <div class="hidden relative z-10 h-full md:flex md:flex-row justify-center items-center gap-4 px-4 ">
     <div class="flex flex-col flex-1  p-4 h-full  justify-center max-w-xl " >
-        <h1 class="text-6xl  text-textPrimary font-bold ps-3 pb-4">Turn Chinese videos into learning 
-            <span class="text-primary">opportunities</span>
+        <h1 class="text-6xl  text-textPrimary font-bold ps-3 pb-4">{heroTitle}
+            <span class="text-primary">{heroSpanText}</span>
         </h1>
         <p class="text-lg text-textSecondary font-light ps-3 pb-6">
-            Enjoy your language learning journey with Pingmu's immersive videos and powerful learning tools
+            {heroDescription}
         </p>
         <br>
         <p class="ps-4 text-textPrimary font-semibold">
